@@ -78,7 +78,7 @@ Resources:
               Action:
                 - s3:*
               Effect: Allow
-             Resource: !GetAtt S3BucketFeedbackBucket.Arn
+              Resource: !GetAtt S3BucketFeedbackBucket.Arn
 
   LambdaPermissionReceiptsBucketS3:
     Type: "AWS::Lambda::Permission"
